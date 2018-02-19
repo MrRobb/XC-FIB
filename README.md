@@ -1,5 +1,10 @@
 # XC-FIB
 
+[![HitCount](http://hits.dwyl.io/mrrobb/XC-FIB.svg)](http://hits.dwyl.io/mrrobb/XC-FIB)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
+[![GitHub Issues](https://img.shields.io/github/issues/mrrobb/XC-FIB.svg)](https://github.com/mrrobb/XC-FIB/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mrrobb/XC-FIB.svg?style=social&label=Star)](https://GitHub.com/mrrobb/XC-FIB/stargazers)
+
 > Jaime Delgado - jaime.delgado@ac.upc.edu
 
 ## Temario
