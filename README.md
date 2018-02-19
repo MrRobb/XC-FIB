@@ -1,5 +1,7 @@
 # XC-FIB
 
+> Jaime Delgado - jaime.delgado@ac.upc.edu
+
 ## Temario
 
 1. Introducción

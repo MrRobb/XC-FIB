@@ -1,12 +1,10 @@
-> Jaime Delgado - jaime.delgado@ac.upc.edu
-
 # Introducción
 
 ## App -> Network
 
-![1](../images/1.png)
+<img src="../images/1.png" width=500>
 
-![2](../images/2.png)
+<img src="../images/2.png" width=500>
 
 Las líneas son estructuras de información.
 
@@ -16,7 +14,7 @@ No solo se usan 2 protocolos. Se usan más.
 
 HTTP que funciona sobre TCP, que funciona sobre un protocolo IP que funciona sobre un protocolo de datos.
 
-![3](../images/3.png)
+<img src="../images/3.png" width=500>
 
 Podemos ver una cadena de datos que contiene los diferentes headers de todos los protocolos.
 
@@ -52,7 +50,7 @@ El modelo de internet es (aprox.):
 - Red (Data Link)
 - Físico
 
-![4](../images/4.png)
+<img src="../images/4.png" width=500>
 
 ## Transmisión
 
