@@ -3,11 +3,11 @@
 ## App -> Network
 
 <p align="center">
-	<img src="../images/1.png" width=500>
+	<img src="../images/1.png" width=60%>
 </p>
 
 <p align="center">
-	<img src="../images/2.png" width=500>
+	<img src="../images/2.png" width=80%>
 </p>
 
 Las líneas son estructuras de información.
@@ -19,7 +19,7 @@ No solo se usan 2 protocolos. Se usan más.
 HTTP que funciona sobre TCP, que funciona sobre un protocolo IP que funciona sobre un protocolo de datos.
 
 <p align="center">
-	<img src="../images/3.png" width=500>
+	<img src="../images/3.png" width=60%>
 </p>
 
 Podemos ver una cadena de datos que contiene los diferentes headers de todos los protocolos.
@@ -57,7 +57,7 @@ El modelo de internet es (aprox.):
 - Físico
 
 <p align="center">
-	<img src="../images/4.png" width=500>
+	<img src="../images/4.png" width=60%>
 </p>
 
 ## Transmisión
