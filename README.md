@@ -10,8 +10,8 @@
 ## Temario
 
 - Introducción
-	- [clase00](Apuntes/clase00.md)
-	- [clase01](Apuntes/clase01.md)
+	- [Clase 00](Apuntes/clase00.md)
+	- [Clase 01](Apuntes/clase01.md)
 - Redes IP
 - Transporte (TCP)
 - LANs
