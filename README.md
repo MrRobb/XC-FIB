@@ -9,13 +9,13 @@
 
 ## Temario
 
-1. Introducción
+- Introducción
 	- [clase00](Apuntes/clase00.md)
 	- [clase01](Apuntes/clase01.md)
-2. Redes IP
-3. Transporte (TCP)
-4. LANs
-5. Aplicaciones
+- Redes IP
+- Transporte (TCP)
+- LANs
+- Aplicaciones
 
 ### Evaluación
 
