@@ -21,7 +21,7 @@ Para indicar máscara de subred en vez de poner (/24) también se puede expresar
 
 La dirección de host con todo ceros no se puede usar, ya que es equivalente a la de red. En nuestro caso 10.1.1.0 sería la dirección de red y no se puede usar como host. 10.1.1.56 SÍ. 10.1.1.0 NO.
 
-#### Dirección de broadcast
+#### Dirección de broadcast (acceder a todos)
 
 Tampoco se puede usar la dirección de broadcast. Que sería con todo 1's. En nuestro caso 10.1.1.255. 10.1.1.47 SÍ. 10.1.1.255 NO.
 
@@ -54,7 +54,7 @@ Sin embargo, una máquina no puede navegar por el mundo con una dirección priva
 
 Las direcciones privadas son "gratis".
 
-#### Rangos de direcciones privadas comunes
+#### Rangos de direcciones privadas
 
 10.0.0.0 - 10.255.255.255
 
@@ -90,3 +90,31 @@ Hoy en día los números de bits de red y los números de bits son variables ya 
 ```
 2 ^ (32 - 25) - 2 - Routers
 ```
+
+```
+Nº dir IP = Hosts + Routers + 2
+```
+
+Si son 53 direcciones, necesitaria 6 bits (64 direcciones). Es el número de bits lo suficientemente grande para que quepan.
+
+El orden para empezar a repartir sería siempre empezar por el caso en el que tienes menos bits de máscara y por tanto más bits de host.
+
+Si te sobran bits a la hora de repartir las direcciones de cada subred, o dejas más bits para añadir hosts o dejas más bits para añadir más redes.
+
+There is no place like `127.0.0.1`.
+
+`127.0.0.1` Es localhost.
+
+### Enrutamiento
+
+> PPP0 es una Point-To-Point connection. Dentro de ese PPP hay una subred con un rango de direcciones.
+
+Me ayuda a decidir en qué dirección deben ir los datos. Yo le digo "a dónde quiero llegar" y la tabla te responde "Cómo ir y por dónde ir".
+
+Para decirle "a dónde quiero llegar" tú le envías la dirección y la máscara de la subred a la que quieres llegar.
+
+La tabla de enrutamiento te devuelve la "Gateway" y la "Interface".
+
+> Para expresar el resto del mundo, se usa la dirección `0.0.0.0` con máscara `0.0.0.0`.
+
+Gateway es la dirección a la que quiero ir y la Interface es "el cable por el que quiero pasar", e0, e1, ...
