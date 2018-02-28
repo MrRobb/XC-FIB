@@ -15,7 +15,7 @@ Antes eran 32 bits (versión 4), luego 128 (versión 6)
 
 #### Máscara de red
 
-Para indicar máscara de subred en vez de poner (/24) también se puede expresar con una dirección, tal que en este caso sería **255.255.255.0** ya que si haces una `&` bit a bit entre `10.1.1.0 & 255.255.255.0` --> independendientemente de lo que hubiese en los 8 bits del final, siempre se seleccionarían los 24 primeros.
+Para indicar máscara de subred en vez de poner (/24) también se puede expresar con una dirección, tal que en este caso sería **255.255.255.0** ya que si haces una `&` bit a bit entre `10.1.1.0 & 255.255.255.0` --> independientemente de lo que hubiese en los 8 bits del final, siempre se seleccionarían los 24 primeros.
 
 #### Dirección de red
 
