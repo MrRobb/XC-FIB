@@ -122,7 +122,7 @@ El formato de ICMP es variable. Es decir, cada mensaje tiene unos campos diferen
 
 ### NAT
 
-> Siglas: Network
+> Siglas: Network Address Translation
 
 > ¿Qué hace?
 
@@ -130,7 +130,7 @@ El formato de ICMP es variable. Es decir, cada mensaje tiene unos campos diferen
 
 ### DNS
 
-> Siglas:
+> Siglas: Domain Name System
 
 > ¿Qué hace?
 
