@@ -13,9 +13,9 @@
 	- [Clase 00](Apuntes/clase00.md)
 	- [Clase 01](Apuntes/clase01.md)
 - Redes IP
-	- [Clase 02](Apuntes/clase02 .md)
-	- [Clase 03](Apuntes/clase03 .md)
-	- [Clase 04](Apuntes/clase04 .md)
+	- [Clase 02](Apuntes/clase02.md)
+	- [Clase 03](Apuntes/clase03.md)
+	- [Clase 04](Apuntes/clase04.md)
 - Transporte (TCP)
 - LANs
 - Aplicaciones
