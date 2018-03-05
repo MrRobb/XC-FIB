@@ -44,6 +44,7 @@ Este offset está almacenado en un campo de la cabecera.
 
 Para no dejarse ningún fragmento de los que me lleguen (yo sé el orden pero no sé cuando termina) guardo el tamaño del paquete entero en la cabecera.
 
-> bit DF/MF: Don't Fragment / More Fragments
+> bit DF: Don't Fragment
+> bit MF: More Fragments
 
-¿Cómo sé yo que han llegado todos los paquetes (los grandes)? Tengo un bit en la cabecera que indica si faltan más fragmentos (DF/MF: 1) o he terminado (DF/MF: 0). Para reducir el nombre de bits del número de bytes, numero en bloques de 8 bytes.
+¿Cómo sé yo que han llegado todos los paquetes (los grandes)? Tengo un bit en la cabecera que indica si faltan más fragmentos (MF: 1) o he terminado (MF: 0). Para reducir el nombre de bits del número de bytes, numero en bloques de 8 bytes.

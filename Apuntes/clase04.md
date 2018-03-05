@@ -64,7 +64,7 @@ Hay un algoritmo llamado MTU Path Discovery puede calcular cual es el tamaño ad
 	<img src="../images/11.png" width=100%>
 </p>
 
-# Protocolos
+# Protocolos de red
 
 ### [ARP](https://www.youtube.com/watch?v=xTOyZ6TWQdM)
 
@@ -80,11 +80,58 @@ Hay un algoritmo llamado MTU Path Discovery puede calcular cual es el tamaño ad
 	<img src="../images/12.png" width=70%>
 </p>  
 
+> Para mejorar la eficiencia: Podemos tener una caché que se guarde las direcciones más recientes / usadas. Y así me puedo ahorrar la pregunta. Sin embargo, la dirección física y la dirección IP puede cambiar, y por tanto tengo un tiempo máximo que puedo permanecer sin refrescar la tabla / caché. Incluso yo puedo informar a los otros que he cambiado mi dirección IP y así "forzar" el refresco de sus tablas.
 
 ### ICMP
 
+> Siglas: Internet Control Message Protocol
+
+> ¿Qué hace? Preguntar (hacer solicitudes) o controlar errores. Por ejemplo, cuando da un error al fragmentar.
+>
+
+¿Qué mensajes transporta (de todos los request hay request y reply)?
+
+- [Echo](https://es.wikipedia.org/wiki/Internet_Control_Message_Protocol#Echo_Reply) (para saber si una máquina está allí) como podría ser un ping.
+- [Timestamp](https://es.wikipedia.org/wiki/Internet_Control_Message_Protocol#Timestamp) para sincronizar tiempos.
+
+¿Qué errores hay?
+- De servicios **(warnings)**:
+	- Source quench (relantización)
+	- [Redirect](https://es.wikipedia.org/wiki/Internet_Control_Message_Protocol#Redirecciones) (redirección)
+- Informes **(errores)**:
+	- [Destino inalcanzable](https://es.wikipedia.org/wiki/Internet_Control_Message_Protocol#Destino_de_Mensaje_Inalcanzable)
+		- Red
+		- Host
+		- Protocolo
+		- Port
+	- [Tiempo excedido](https://es.wikipedia.org/wiki/Internet_Control_Message_Protocol#Tiempo_Excedido)
+
+El formato de ICMP es variable. Es decir, cada mensaje tiene unos campos diferentes.
+
+> ¿Cómo lo hace? Es un protocolo de red pero viaja sobre IP. Lo cual tiene sus problemas.
+
+> Notas: Los errores de los mensaje de error no se reportan.
+
 ### DHCP
+
+> Siglas: Dynamic Host Configuration Protocol
+
+> ¿Qué hace?
+
+> ¿Cómo lo hace?
 
 ### NAT
 
+> Siglas: Network
+
+> ¿Qué hace?
+
+> ¿Cómo lo hace?
+
 ### DNS
+
+> Siglas:
+
+> ¿Qué hace?
+
+> ¿Cómo lo hace?
