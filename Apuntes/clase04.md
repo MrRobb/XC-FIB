@@ -110,28 +110,4 @@ El formato de ICMP es variable. Es decir, cada mensaje tiene unos campos diferen
 
 > ¿Cómo lo hace? Es un protocolo de red pero viaja sobre IP. Lo cual tiene sus problemas.
 
-> Notas: Los errores de los mensaje de error no se reportan.
-
-### DHCP
-
-> Siglas: Dynamic Host Configuration Protocol
-
-> ¿Qué hace?
-
-> ¿Cómo lo hace?
-
-### NAT
-
-> Siglas: Network Address Translation
-
-> ¿Qué hace?
-
-> ¿Cómo lo hace?
-
-### DNS
-
-> Siglas: Domain Name System
-
-> ¿Qué hace?
-
-> ¿Cómo lo hace?
+> Notas: Los errores de los mensajes de error no se reportan.
