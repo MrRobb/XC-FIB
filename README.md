@@ -17,6 +17,7 @@
 	- [Clase 03](Apuntes/clase03.md)
 	- [Clase 04](Apuntes/clase04.md)
 	- [Clase 05](Apuntes/clase05.md)
+	- [Clase 06](Apuntes/clase06.md)
 - Transporte (TCP)
 - LANs
 - Aplicaciones

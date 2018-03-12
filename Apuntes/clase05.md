@@ -75,8 +75,22 @@ Destination Network Address Translation
 
 ### DNS
 
-> Siglas: Domain Name System.
+Traduce: **NOMBRE --> IP**
 
-> ¿Qué hace? Es el protocolo según el cuál tú le das un nombre al servidor DNS y este te da una dirección IP.
+> Siglas: Domain Name System. En realidad es de nivel de aplicación aunque es el protocolo más básico para tener IP. DNS funciona sobre transporte, concretamente sobre UDP.
 
-> ¿Cómo lo hace? Antes de poder preguntar, tengo que tener una dirección DNS. Esta dirección te la da el servidor DHCP.
+> ¿Qué hace? Es el protocolo según el cuál tú le das un nombre al servidor DNS y este te da una dirección IP. Nosotros identificamos las máquinas con nombres y DNS hace la traducción de esos nombres a su dirección IP.
+
+Estos nombres tienen una jerarquía donde el último . algo es un top-level domain.
+|myhost|.ac|.upc|.edu|
+|-|-|-|-|
+
+Hay organizaciones que reparten los dominios (por ejemplo upc.edu) y luego hay otras organizaciones que reparten los subdominios (por ejemplo ac.upc.edu). Todos estos dominios tienen que ser únicos.
+
+> ¿Cómo lo hace? Antes de poder preguntar, tengo que tener una dirección DNS. Esta dirección te la da el servidor DHCP. La información IP de un nombre la tiene un servidor de nombres, quién tendrá una tabla con dos campos (nombre, dirección IP).
+>
+> Si yo quiero saber la dirección IP de un nombre, accedo a una máquina local. Dentro del dominio upc.edu habrá un servidor que tendrá las direcciones IP de cada uno de los servidores de nombres de cada departamento. Pero para saber la dirección del servidor de nombres upc.edu, tengo que preguntar al nivel superior. Es decir, voy accediendo jerárquicamente a cada uno de los servidores de nombres. Desde .edu, luego a upc.edu, luego a ac.upc.edu hasta llegar al host que quiero llegar.
+>
+> Obviamente, yo tengo una memoria caché en la que guardo las resoluciones de nombre recientes, así no tengo que estar pregutando contínuamente.
+>
+> Mi ordenador solamente pregunta al servidor de nombres local mío (dirección la cual te da el DHCP) y él se encarga de preguntar a los demás. A su vez, ese servidor local también tiene una gran caché para no tener que estar preguntando todo el rato.
