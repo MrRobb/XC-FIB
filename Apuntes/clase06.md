@@ -28,4 +28,4 @@ Si me precipito, podría hacer un cambio brusco de enrutamiento innecesario. Por
 
 En la tabla de enrutamiento, yo guardo: `el destino, el gateway, el interface y la métrica` (es el número de **saltos** que necesito para llegar a la máquina de destino).
 
-La información que se envía es lo que el router sabe (un vector de distancias / saltos).  
+La información que se envía es lo que el router sabe (un vector de distancias / saltos).
