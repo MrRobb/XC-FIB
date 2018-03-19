@@ -14,7 +14,7 @@ Nosotros solo vamos a hablar de algoritmos interiores. Suponiendo que las subred
 
 #### RIP Update
 
-Es un mensaje de actualización que se envía a todos los routers a los que está conectado.
+Es un mensaje de actualización que se envía a todos los routers a los que está conectado. Se envían sobre UDP.
 
 ##### ¿Cada cuanto?
 
@@ -26,6 +26,10 @@ Si me precipito, podría hacer un cambio brusco de enrutamiento innecesario. Por
 
 ##### ¿Qué información se envía?
 
-En la tabla de enrutamiento, yo guardo: `el destino, el gateway, el interface y la métrica` (es el número de **saltos** que necesito para llegar a la máquina de destino).
+En la tabla de enrutamiento, yo guardo: `el destino, el gateway, el interface y la métrica` (es el número de **saltos / aristas** que necesito para llegar a la máquina de destino).
 
 La información que se envía es lo que el router sabe (un vector de distancias / saltos).
+
+> Si el router es adyacente a una subred, el número de saltos es 1.
+
+Se intenta **minimizar la cantidad de saltos**.
