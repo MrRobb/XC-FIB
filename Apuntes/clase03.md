@@ -47,4 +47,4 @@ Para no dejarse ningún fragmento de los que me lleguen (yo sé el orden pero no
 > bit DF: Don't Fragment
 > bit MF: More Fragments
 
-¿Cómo sé yo que han llegado todos los paquetes (los grandes)? Tengo un bit en la cabecera que indica si faltan más fragmentos (MF: 1) o he terminado (MF: 0). Para reducir el nombre de bits del número de bytes, numero en bloques de 8 bytes.
+¿Cómo sé yo que han llegado todos los paquetes (los grandes)? Tengo un bit en la cabecera que indica si faltan más fragmentos (MF: 1) o he terminado (MF: 0). Para reducir el nombre de bits del número de bloques, numero en bloques de 8 bytes.
